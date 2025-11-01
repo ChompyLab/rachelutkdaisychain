@@ -1,0 +1,2900 @@
+* {
+  margin: 0;
+}
+@font-face {
+  font-family: Lydian;
+  src: url("https://cdn.glitch.global/f58bfe5b-8b46-40fb-9359-3b2d1d10a4c7/Lydian%20Regular.woff?v=1746981818609")
+    format("woff");
+}
+@font-face {
+  font-family: Annie;
+  src: url("https://cdn.glitch.global/f58bfe5b-8b46-40fb-9359-3b2d1d10a4c7/AnnieUseYourTelescope-Regular.woff?v=1746981815079")
+    format("woff");
+}
+
+/* @font-face {
+  font-family: 'arsenica-variable', sans-serif;
+  font-variation-settings: "opsz" 100, "wght" 400;
+} */
+
+/* base version of header */
+.daisy_chain_header {
+  background: #4101a1;
+  padding: 5%;
+  display: flex;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: -2px;
+  /*   letter-spacing: -2px; */
+  /* above is the thing for tracking,    */
+}
+/* backgrounds */
+.b0 {
+  background-color: #080e20;
+}
+.b1 {
+  background-color: #ffe2cf;
+}
+.b2 {
+  background-color: #7d7f3b;
+}
+.b3 {
+  background-color: skyblue;
+}
+.b4 {
+  background-color: #de6252;
+}
+.b5 {
+  background-color: #808000;
+}
+.b6 {
+  background-color: #EBD373;
+}
+.b7 {
+  background-color: #C4964B;
+}
+.b8 {
+  background-color: #1B080B;
+}
+.b9 {
+  background-color: #7B98AC;
+}
+.b10 {
+  background-color: #09728B;
+}
+.bs {
+  background-color: #080e20;
+}
+.bs2 {
+  background-color: #4101a1;
+}
+
+/* for the rabbit image, see if you can take the black off the image n just leave the white */
+.Rabbit {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  
+}
+.Rabbit_spacer {
+/*   display: flex; */
+  justify-content: center;
+  display: none;
+  height: 200px; /* match #Rabbit’s height */
+  width: 100vw;
+}
+.rlink {
+  font-family: Lydian, sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  
+/*   opacity: 0%; */
+  display: none;
+}
+.rlink_spacer {
+  display: block;
+  height: auto;
+  padding: 20px;
+  font-size: 25px;
+  visibility: hidden;
+/*   visibility: hidden;  keeps space, hides content  */
+}
+.DCH {
+  font-family: Lydian, sans-serif;
+  text-decoration: none;
+  color: white;
+/*   font-size: 25px; */
+/*   font-size: 3vw; */
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.DCH:hover {
+  color: orange;
+  opacity: 70%;
+}
+.DCH:active {
+  color: lightskyblue;
+  opacity: 100%;
+}
+
+.DCHP {
+  font-family: Annie, sans-serif;
+  text-decoration: none;
+  color: white;
+/*   font-size: 25px; */
+/*   font-size: 3vw; */
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  letter-spacing: 5px;
+}
+.DCHP:hover {
+  color: #FFDC5C;
+  opacity: 70%;
+}
+.DCHP:active {
+  color: CornflowerBlue;
+  opacity: 100%;
+}
+
+
+.rfall {
+  font-family: Annie, serif;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 10px;
+
+  /*  for the glitch effect:  */
+  text-shadow: 5px 0 #4101a1, -3px 0 #680704;
+}
+
+.rfallR {
+  font-family: Annie, serif;
+  color: #680704;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 10px;
+}
+.rfallB {
+  font-family: Annie, serif;
+  color: #4101a1;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 15px;
+  z-index: 1;
+}
+.enter {
+  background: #4101a1;
+  display: flex;
+  justify-content: center;
+
+  width: 200px;
+  height: 20px;
+  flex-shrink: 0;
+  margin: 100px 50px;
+  border-radius: 50%;
+
+  font-size: 15px;
+  align-items: center;
+  color: #4101a1;
+  /*   clip-path: circle(70%); */
+
+  /*   padding: 100px; */
+}
+.enter:hover {
+  background: white;
+}
+a {
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.shh {
+  background: #080e20;
+  color: #080e20;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  
+  width: 200px;
+  height: 20px;
+  border-radius: 50%;
+  
+}
+.shh:hover {
+  color: #341f70;
+  font-size: 15px;
+  font-family: Lydian, sans-serif;
+  align-items: center;
+  justify-content: center;
+} 
+.AMessage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.AMessage:hover {
+  color: #341f70;
+  font-size: 15px;
+  font-family: Lydian, sans-serif;
+  align-items: center;
+}
+.shh2 {
+  background: #4101a1; 
+/*   color: white; */
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  
+  width: 200px;
+  height: 20px;
+  border-radius: 50%;
+  
+}
+.shh2:hover {
+  color: #4101a1;
+  background: white;
+  font-size: 15px;
+  font-family: Lydian, sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+.AMessage2 a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  color: white;
+}
+.AMessage2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+  font-family: Lydian, sans-serif;
+  align-items: center;
+/*   background: #4101a1; */
+}
+.AMessage2:hover {
+/*   background: white; */
+/*   color: #341f70; */
+  font-size: 15px;
+  font-family: Lydian, sans-serif;
+  align-items: center;
+}
+
+
+.JustForYou {
+  display: none;
+  align-items: center;
+  color: #080e20;
+  opacity: 0%;
+  
+  font-size: 15px;
+  font-family: Lydian, sans-serif;
+}
+.JustForYou:hover {
+  color: #341f70;
+  font-size: 15px;
+  font-family: Lydian, sans-serif;
+  
+  opacity: 100%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  font-family: Lydian, sans-serif;
+  color: white;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  letter-spacing: 3px;
+  font-family: Annie, sans-serif;
+  color: white;
+  
+/*  all the h2 settings for persona */
+}
+h4{
+  display: flex;
+  justify-content: center;
+/*   padding: 2%; */
+  letter-spacing: 8px;
+  font-family: Annie, sans-serif;
+  color: white;
+  
+/*  all the h2 settings for persona */
+}
+.look {
+  color:red;
+  font-size: 2vw;
+}
+.hint {
+  font-size: 2vw;
+}
+
+/* a {
+  font-family: Lydian, sans-serif;
+  text-decoration: none;
+  color: white;
+} */
+
+a:hover {
+  color: #4101a1;
+}
+
+.main {
+  width: 100vw;
+  gap: 10px;
+}
+.spacer1 {
+  display: flex;
+  gap: 50px;
+  /*   width: 20px; */
+  height: 100px;
+  aspect-ratio: 3/2;
+}
+.spacer2 {
+  display: flex;
+  gap: 20px;
+  width: 40px;
+  aspect-ratio: 3/2;
+}
+.spacer3 {
+  display: flex;
+  gap: 50px;
+  /*   width: 1000px; */
+  height: 340px;
+  aspect-ratio: 3/2;
+}
+.spacer4 {
+  display: flex;
+  gap: 50px;
+  width: 500px;
+  aspect-ratio: 3/2;
+}
+.spacer5 {
+  display: flex;
+  gap: 30px;
+  width: 500px;
+  aspect-ratio: 3/2;
+}
+.sh1 {
+  display: flex;
+  gap: 30px;
+  /*   width: 50px; */
+  height: 100px;
+  aspect-ratio: 2/3;
+}
+.sh2 {
+  display: flex;
+  gap: 30px;
+  /*   width: 50px; */
+  height: 200px;
+  aspect-ratio: 2/3;
+}
+.sh3 {
+  display: flex;
+  gap: 30px;
+  /*   width: 50px; */
+  height: 250px;
+  aspect-ratio: 2/3;
+}
+.sh4 {
+  display: flex;
+  gap: 30px;
+  /*   width: 50px; */
+  height: 400px;
+  aspect-ratio: 2/3;
+}
+.sh5 {
+  display: flex;
+  gap: 30px;
+  /*   width: 50px; */
+  height: 500px;
+  aspect-ratio: 2/3;
+}
+
+/* stuff for the rabbits */
+  /* note: orange go back, maroon go home, purple special */
+.rMain {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  
+  overflow: visible;
+}
+.rabbits {
+  width: 100%;
+  height: auto;
+}
+.rabbits img {
+  max-width: 75px;
+  height: auto;
+}
+.r1 {
+  position: relative;
+  width: 75px;
+  height: auto;
+}
+.r2 {
+  position: relative;
+  width: 75px;
+  height: auto;
+}
+.r3 {
+  position: relative;
+  width: 75px;
+  height: auto;
+}
+.r4 {
+  position: relative;
+  width: 75px;
+  height: auto;
+}
+.r5 {
+  position: relative;
+  width: 75px;
+  height: auto;
+}
+.r6 {
+  position: relative;
+  width: 75px;
+  height: auto;
+}
+.r7 {
+  position: relative;
+  width: 75px;
+  height: auto;
+}
+.r8 {
+  position: relative;
+  width: 75px;
+  height: auto;
+}
+.rS {
+  position: relative;
+  width: 75px;
+  height: auto;
+}
+.rB {
+  position: relative;
+  width: 75px;
+  height: auto;
+}
+.rH {
+  position: relative;
+  width: 75px;
+  height: auto;
+}
+
+/* smokey page rabbits below */
+.r1S {
+  position: relative;
+  width: 75px;
+  height: auto;
+  top: 65px;
+  
+  z-index: 10;
+}
+.r6S {
+  display: none;
+  position: relative;
+  
+  width: 75px;
+  height: auto;
+/*   bottom: 65px; */
+  bottom: 0px;
+  right: 0px;
+  
+  z-index: 10;
+}
+.r7S {
+  display: none;
+  right: 0px;
+  position: relative;
+  width: 75px;
+  height: auto;
+  top: 65px;
+  
+/*   z-index: 10; */
+}
+
+/* Smokey 1932 rabbits below */
+.r2_SO {
+  position: relative;
+/*   width: 75px; */
+  height: auto;
+/*   top: 65px; */
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+.r4_SO {
+  display: none;
+  position: relative;
+/*   width: 75px; */
+  height: auto;
+/*   top: 65px;
+  left: 245px; */
+  top: 0px;
+  left: 0px;
+
+}
+.r5_SO {
+  display: none;
+  position: relative;
+/*   width: 75px; */
+  height: auto;
+/*   top: 1450px;
+  left: 150px; */
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+.r3_SO {
+  display: none;
+  position: relative;
+/*   width: 75px; */
+  height: auto;
+/*   top: 1450px;
+  left: 150px; */
+  top: 0px;
+  left: 0px;
+}
+.r8_SO {
+  display: none;
+  position: relative;
+/*   width: 75px; */
+  height: auto;
+/*   top: 425px;
+  left: -130px; */
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+
+/* 1932 olympic rabbits -- Main */
+
+.rP1 {
+  position: relative;
+  width: 75px;
+  height: auto;
+/*   top: 1850px;
+  left: 710px; */
+  opacity: 5%;
+  
+  z-index: 10;
+}
+
+.r13P {
+  position: relative;
+  width: 75px;
+  height: auto;
+/*   top: 1850px;
+  left: 710px; */
+  
+  z-index: 50;
+}
+
+/* for movement: r2, r8 run R, r6 wait, r5 jump up/right, 
+                r7 wait, r4 jump up/left, r3 to next page 
+*/
+.r2_LA {
+  position: relative;
+  width: 75px;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+.r8_LA {
+  display: none;
+  position: relative;
+  width: 75px;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+}
+.r6_LA {
+  display: none;
+  position: relative;
+  width: 75px;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+.r5_LA {
+  display: none;
+  position: relative;
+  width: 75px;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+}
+/* taking the 2nd to last 2 out to make it faster for now 
+.r7_LA {
+
+  position: relative;
+  width: 75px;
+  height: auto;
+/*   top: -75px;
+  left: 590px; *
+  width: 75px;
+}
+.r4_LA {
+
+  position: relative;
+  width: 75px;
+  height: auto;
+/*   top: -75px;
+  left: 590px; *
+  width: 75px;
+}
+*/
+.r3_LA {
+  display: none;
+  position: relative;
+  width: 75px;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+  
+  z-index: 50;
+}
+/* Roman Rabbits */
+.r6R {
+  position: relative;
+  width: 75px;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+.r8iR {
+  display: none;
+  position: relative;
+  width: 75px;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+
+}
+.r4R {
+  display: none;
+  position: relative;
+  width: 75px;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+
+/* Arcadian Rabbits */
+.r5_Arc {
+  position: relative;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+.r8_Arc {
+  display: none;
+  position: relative;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+}
+.r2_Arc {
+  display: none;
+  position: relative;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+/* Hermes Rabbits (Harps) */
+.r6_Harp {
+  position: relative;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+.r8i_Harp {
+  display: none;
+  position: relative;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+}
+.r4_Harp {
+  display: none;
+  position: relative;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+  /* Hermes trick rabbits */
+.r7_Harp {
+  position: relative;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+.r5_Harp {
+  display: none;
+  position: relative;
+  height: auto;
+/*   top: -75px;
+  left: 590px; */
+  width: 75px;
+  top: 0px;
+  left: 0px;
+  
+  z-index: 10;
+}
+/*  Archaic greece stuff  */
+  .r7_ArcG {
+    position: relative;
+    height: auto;
+  /*   top: -75px;
+    left: 590px; */
+    width: 75px;
+    top: 0px;
+    left: 0px;
+
+    z-index: 10;
+  }
+  .r5_ArcG {
+    display: none;
+    position: relative;
+    height: auto;
+  /*   top: -75px;
+    left: 590px; */
+    width: 75px;
+    top: 0px;
+    left: 0px;
+
+/*     z-index: 10; */
+  }
+  .r6_ArcG {
+    display: none;
+    position: relative;
+    height: auto;
+  /*   top: -75px;
+    left: 590px; */
+    width: 75px;
+    top: 0px;
+    left: 0px;
+
+    z-index: 10;
+  }
+/*  Homer stuff  */
+  /* 3, 8, 2 */
+  .r3_Hom {
+    position: relative;
+    height: auto;
+  /*   top: -75px;
+    left: 590px; */
+    width: 75px;
+    top: 0px;
+    left: 0px;
+
+    z-index: 10;
+  }
+  .r8_Hom {
+    display: none;
+    position: relative;
+    height: auto;
+  /*   top: -75px;
+    left: 590px; */
+    width: 75px;
+    top: 0px;
+    left: 0px;
+
+    z-index: 10;
+  }
+  .r2_Hom {
+    display: none;
+    position: relative;
+    height: auto;
+  /*   top: -75px;
+    left: 590px; */
+    width: 75px;
+    top: 0px;
+    left: 0px;
+
+    z-index: 10;
+  }
+/*  Odyssey Rabbits  */
+  /*  2, 8i, 5  */
+  .r2_Ody {
+    position: relative;
+    height: auto;
+  /*   top: -75px;
+    left: 590px; */
+    width: 75px;
+    top: 0px;
+    left: 0px;
+
+    z-index: 10;
+  }
+.r8i_Ody {
+    display: none;
+    position: relative;
+    height: auto;
+  /*   top: -75px;
+    left: 590px; */
+    width: 75px;
+    top: 0px;
+    left: 0px;
+
+    z-index: 10;
+  }
+.r5_Ody {
+    display: none;
+    position: relative;
+    height: auto;
+  /*   top: -75px;
+    left: 590px; */
+    width: 75px;
+    top: 0px;
+    left: 0px;
+
+    z-index: 10;
+  }
+/* EPIC hoppers */
+  .r9E{
+    
+    position: relative;
+    height: auto;
+  /*   top: -75px;
+    left: 590px; */
+    width: 75px;
+    top: 0px;
+    left: 0px;
+
+    z-index: 10;
+  }
+  .rBE{
+    display: none;
+    position: relative;
+    height: auto;
+  /*   top: -75px;
+    left: 590px; */
+    width: 75px;
+    top: 0px;
+    left: 0px;
+
+    z-index: 10;
+  }
+  .rHE{
+    display: none;
+    position: relative;
+    height: auto;
+  /*   top: -75px;
+    left: 590px; */
+    width: 75px;
+    top: 0px;
+    left: 0px;
+
+    z-index: 10;
+  }
+
+/* stuff for smokey page */
+/* this is for the mosaic part */
+.main2 {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  /*   grid-template-columns: repeat(auto-fill, minmax(150px, 4fr)); */
+  gap: 10px;
+  
+  /*   padding: 10px; */
+}
+.pic_holder{
+  display: flex;
+  
+  width: 100%;
+  
+}
+
+.iC {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+.iLt {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100%;
+  justify-content: space-between;
+
+  z-index: 10;
+}
+.ilt_L {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 50px;
+}
+.ilt_R {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 10px;
+}
+/* .dk_holder{
+  display: flex;
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+} */
+
+.iDk {
+  margin: 0px;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  width: 100vw;
+  height: 100%;
+  justify-content: space-between;
+
+/*   top: 806px; */
+  z-index: -5;
+}
+.idk_L {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+/*   gap: 80px; */
+}
+.idk_R {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+/*   gap: 55px; */
+}
+
+.pic {
+  width: 100%;
+  /*   height: 100vw; */
+}
+.picH1 {
+  width: 100%;
+  /*   height: 100vw; */
+}
+.picH2 {
+  display: none;
+  width: 100%;
+  /*   height: 100vw; */
+}
+.HM {
+  display: none;
+  width: 50px;
+  aspect-ratio: 1;
+}
+audio {
+  display: none;
+}
+
+.smokey_image {
+  display: flex;
+  justify-content: center;
+/*   width:auto; */
+}
+.smokey_image2 {
+  display: flex;
+  justify-content: center;
+  height:auto;
+  width: 150%;
+}
+.smokey_image2 img {
+/*   width: 50%; */
+  height: auto;
+}
+.smokey_image img {
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+}
+.m_image {
+  display: flex;
+  justify-content: center;
+/*   max-width: 100%; */
+  width: 150%;
+  height: auto;
+}
+.m_image img {
+  max-width: 100%;
+  width: 30%;
+  height: auto;
+}
+
+.tSmokey {
+  display: flex;
+  justify-content: center;
+  font-size: 3vw;
+  flex-direction: column;
+  width: 100vw;
+}
+.tSmokey2 {
+  display: flex;
+  justify-content: center;
+  font-size: 3vw;
+  width: 75vw;
+  flex-direction: column;
+}
+.tSmokey3 {
+  display: flex;
+  justify-content: center;
+  font-size: 3vw;
+  width: 75vw;
+  flex-direction: column;
+  font-family: Annie, serif;
+}
+
+.s1 {
+}
+.s2 {
+}
+.s3 {
+}
+
+
+
+/* stuff for footers */
+/* splash stuff */
+.b_text {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+
+  font-family: Lydian, sans-serif;
+  color: #9574ff;
+  font-size: 20px;
+}
+.b_holder {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+
+  gap: 50px;
+}
+.badge {
+  display: flex;
+  justify-content: center;
+  background: #9574ff;
+  width: 100px;
+  aspect-ratio: 1;
+  
+  animation: pop 0.4s ease forwards;
+}
+
+.glow1 {
+  animation: badgeGlowE 1.5s ease-in-out infinite;
+}
+.glow2 {
+  animation: badgeGlowH 1.5s ease-in-out infinite;
+}
+.glow3 {
+  animation: badgeGlowP 1.5s ease-in-out infinite;
+}
+/* for animations: */
+@keyframes pop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Badge glow animation */
+@keyframes badgeGlowE {
+  0% {
+    box-shadow: 0 0 15px rgba(64, 224, 208, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 1); /* Aqua glow */
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(64, 224, 208, 0.5);
+  }
+}
+@keyframes badgeGlowH {
+  0% {
+    box-shadow: 0 0 15px rgba(50, 205, 50, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 50px rgba(0, 255, 0, 1); /* Lime glow */
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(50, 205, 50, 0.5);
+  }
+}
+@keyframes badgeGlowP {
+  0% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 215, 0, 1); /* Yellow glow */
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+}
+
+#all-unlocked {
+  display: none;
+/*   margin-top: 30px;  */
+  font-size: 20px; 
+  color: #00ffcc;
+  font-family: Lydian, serif;
+}
+#secret-link {
+  color: #9574ff;
+  font-size: 20px;
+  font-family: Lydian, serif;
+}
+.bi {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.bg1{
+  
+  width: 100%;
+  aspect-ratio: 1;
+}
+.bg2{
+  width: 100%;
+  aspect-ratio: 1;
+}
+.bg3{
+  width: 100%;
+  aspect-ratio: 1;
+}
+#bg1S{
+  width: 100%;
+  aspect-ratio: 1;
+}
+#bg2S{
+  width: 100%;
+  aspect-ratio: 1;
+}
+#bg3S{
+  width: 100%;
+  aspect-ratio: 1;
+}
+#bg1F{
+  width: 100%;
+  aspect-ratio: 1;
+}
+#bg2F{
+  width: 100%;
+  aspect-ratio: 1;
+}
+#bg3F{
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+
+
+/* form {
+  /*   background: #9574ff; 
+  display: flex;
+  align-items: center;
+} 
+*/
+input {
+  all: unset;
+  font: 16px system-ui;
+  background: #9574ff;
+  height: 50%;
+  width: 50%;
+  padding: 6px 10px;
+  color: white;
+}
+/* input:valid {
+  border-color: lightgreen;
+}
+input:invalid {
+  border-color: tomato;
+}
+form:has(input:invalid) {
+  border: 2px solid tomato;
+} */
+
+.code-input {
+  padding: 10px;
+  border: 2px solid #9574ff;
+  background-color: #080e20;
+  color: white;
+  font-family: Lydian, serif;
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
+  outline: none;
+  cursor: text;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+.boop {
+  display: flex;
+  justify-content: center;
+/*   all: unset; */
+/*   text-decoration: none; */
+  font-family: Lydian, serif;
+  background: #080e20;
+  color: white;
+  cursor: pointer;
+  width: 45px;
+  height: 30px;
+  
+  border-color: #9574ff;
+  border-style: solid;
+  border-width: 1px;
+  
+}
+.boop:hover {
+  background: #9574ff;
+  
+  color: white;
+}
+.boop:active {
+  background: skyblue;
+  color: #080e20;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+/* stuff for search bar */
+.nav input[type="text"] {
+  float: right;
+  padding: 6px;
+  border: none;
+/*   margin-top: 8px;
+  margin-right: 16px; */
+  
+  font-family: Lydian, serif;
+  font-size: 17px;
+  background: #9574ff;
+  align-self: center;
+}
+#hint{
+  display: flex;
+  justify-content: center;
+/*   align-itens: bottom; */
+  
+  margin: 15px 0px;
+  color:white;
+}
+
+/* "toast" pop-up notification */
+#toast {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+/*   background: tomato; */
+/*   color: white; */
+  
+  padding: 12px 24px;
+  border-radius: 8px;
+  
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  text-align: center;
+  font-family:Lydian, serif;
+}
+/* Toast fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ✅ Success toast */
+.toast-success {
+  background-color: springgreen;
+  color: green;
+}
+
+/* ❌ Error toast */
+.toast-error {
+  background-color: tomato;
+  color: white;
+}
+
+
+/* others */
+.fMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #4101a1;
+
+  padding: 5px;
+  gap: 5px;
+  height: fit-content;
+  width: 70%;
+}
+.badge_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #080e20;
+
+  padding: 5px;
+  gap: 5px;
+  height: fit-content;
+  width: 70%;
+}
+.fEnd2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+/*   background: #4101a1; */
+
+  padding: 5px;
+  gap: 5px;
+  height: fit-content;
+  width: 70%;
+}
+.f1 {
+/*  Smokey UTK  */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background: #e46e24;
+  font-family: Lydian, sans-serif;
+  color: white;
+  font-size: 3vw;
+  
+  padding: 5px;
+  gap: 5px;
+/*   height: 50px; */
+  width: 70%;
+}
+.f2 {
+/*  Smoky 1932  */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background: #e46e24;
+  font-family: Lydian, sans-serif;
+  color: white;
+  font-size: 3vw;
+  
+  height: fit-content;
+  width: 70%;
+  
+  background: orangered;
+}
+.f3 {
+/*  LA Olympics  */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background: crimson;
+  font-family: Lydian, sans-serif;
+  color: white;
+  font-size: 3vw;
+  
+  height: fit-content;
+  width: 70%;
+}
+.f4 {
+/*  Rome  */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background: #2F9428;
+  font-family: Lydian, sans-serif;
+  color: white;
+  font-size: 3vw;
+  
+  height: fit-content;
+  width: 70%;
+}
+.f5 {
+/*  Arcadia  */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background: #946028;
+  font-family: Lydian, sans-serif;
+  color: white;
+  font-size: 3vw;
+  
+  height: fit-content;
+  width: 70%;
+}
+.f6 { 
+/*  Hermes  */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background: #008D13;
+  font-family: Lydian, sans-serif;
+  color: white;
+  font-size: 3vw;
+  
+  height: fit-content;
+  width: 70%;
+}
+.f7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background: #6E2A00;
+  font-family: Lydian, sans-serif;
+  color: white;
+  font-size: 3vw;
+  
+  height: fit-content;
+  width: 70%;
+}
+.f8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background: #EB7F0C;
+  font-family: Lydian, sans-serif;
+  color: white;
+  font-size: 3vw;
+  
+  height: fit-content;
+  width: 70%;
+}
+.f9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background: #133E80;
+  font-family: Lydian, sans-serif;
+  color: white;
+  font-size: 3vw;
+  
+  height: fit-content;
+  width: 70%;
+}
+.f10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background: #EE9257;
+  font-family: Lydian, sans-serif;
+  color: white;
+  font-size: 3vw;
+  
+  height: fit-content;
+  width: 70%;
+}
+.fs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background: #483D8B;
+  font-family: Lydian, sans-serif;
+  color: white;
+  font-size: 3vw;
+  
+  height: fit-content;
+  width: 70%;
+}
+.fs2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  
+  background: red;
+  font-family: Lydian, sans-serif;
+  color: white;
+  font-size: 3vw;
+  
+  height: fit-content;
+  width: 70%;
+}
+
+/* stuff for headers */
+.Tpic {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  /*   width: 50vw; */
+  /*   height: 30vw; */
+/*   width: 650px;
+  aspect-ratio: 6.14/2; */
+  width: 100vw;
+  height: auto;
+}
+.Tpic2 {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  /*   width: 50vw; */
+  /*   height: 30vw; */
+/*   width: 650px;
+  aspect-ratio: 6.14/2; */
+  width: 100vw;
+  height: auto;
+}
+.Tpic3 {
+  display: flex;
+
+  margin: 0px;
+  /*   width: 50vw; */
+  /*   height: 30vw; */
+/*   width: 650px;
+  aspect-ratio: 6.14/2; */
+  width: 100vw;
+  height: auto;
+}
+
+.Tpic4 {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  
+  width: 100vw;
+  height: auto;
+}
+.Tpic5 {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  
+  width: 100vw;
+  height: auto;
+}
+.Tpic6 {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  
+  width: 100vw;
+  height: auto;
+}
+.TpicAG {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  
+  width: 100vw;
+  height: auto;
+}
+.Tpic7 {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  
+  width: 100vw;
+  height: auto;
+}
+.Tpic9 {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  
+  width: 100vw;
+  height: auto;
+}
+.Tpic10 {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  
+  width: 100vw;
+  height: auto;
+}
+.TpicS {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  /*   width: 50vw; */
+  /*   height: 30vw; */
+/*   width: 650px;
+  aspect-ratio: 6.14/2; */
+  width: 100vw;
+  height: auto;
+}
+
+.splashH1 {
+  background: #4101a1;
+  width: 100vw;
+  justify-content: center;
+  padding: 1%;
+  display: flex;
+  font-family: Lydian, sans-serif;
+  color: #9574ff;
+  font-size: 40px;
+}
+#spacing {
+  height: 0px;
+}
+
+.smokeyH1 {
+  display: flex;
+  flex-direction: column;
+  background: #e46e24;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  padding: 5% 0%;
+  display: flex;
+  font-family: Lydian, sans-serif;
+  font-size: 3vw;
+/*   font-size: fit-content; */
+  color: white;
+}
+
+.smokyOH1{
+  display: flex;
+  flex-direction: column;
+  background: orangered;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  padding: 5% 0%;
+  display: flex;
+  font-family: Lydian, sans-serif;
+  font-size: 3vw;
+  color: white;
+}
+
+.LA_OH1 {
+  display: flex;
+/*   position:relative; */
+  flex-direction: column;
+  background: crimson;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  padding: 5% 0%;
+  display: flex;
+  font-family: Lydian, sans-serif;
+  font-size: 3vw;
+  color: white;
+  z-index: 10;
+}
+
+.RH1 {
+  display: flex;
+/*   position:relative; */
+  flex-direction: column;
+  background: #2F9428;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  padding: 5% 0%;
+  display: flex;
+  font-family: Lydian, sans-serif;
+  font-size: 3vw;
+  color: white;
+  z-index: 10;
+}
+.Arcadia_H1 {
+  display: flex;
+/*   position:relative; */
+  flex-direction: column;
+  background: #946028;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  padding: 5% 0%;
+  display: flex;
+  font-family: Lydian, sans-serif;
+  font-size: 3vw;
+  color: white;
+  
+  z-index: 10;
+}
+.Hermes_H1 {
+  display: flex;
+/*   position:relative; */
+  flex-direction: column;
+  background: #008D13;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  padding: 5% 0%;
+  display: flex;
+  font-family: Lydian, sans-serif;
+  font-size: 3vw;
+  color: white;
+  
+  z-index: 10;
+}
+.Archaic_H1 {
+  display: flex;
+/*   position:relative; */
+  flex-direction: column;
+  background: #6E2A00;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  padding: 5% 0%;
+  display: flex;
+  font-family: Lydian, sans-serif;
+  font-size: 3vw;
+  color: white;
+  
+  z-index: 10;
+}
+.Homer_H1 {
+  display: flex;
+/*   position:relative; */
+  flex-direction: column;
+  background: #EB7F0C;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  padding: 5% 0%;
+  display: flex;
+  font-family: Lydian, sans-serif;
+  font-size: 3vw;
+  color: white;
+  
+  z-index: 10;
+}
+.Odyssey_H1 {
+  display: flex;
+/*   position:relative; */
+  flex-direction: column;
+  background: #133E80;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  padding: 5% 0%;
+  display: flex;
+  font-family: Lydian, sans-serif;
+  font-size: 3vw;
+  color: white;
+  
+  z-index: 10;
+}
+.rf {
+  color: #EB7F0C;
+}
+
+.EPIC_H1 {
+  display: flex;
+/*   position:relative; */
+  flex-direction: column;
+  background: #EE9257;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  padding: 5% 0%;
+  display: flex;
+  font-family: Lydian, sans-serif;
+  font-size: 3vw;
+  color: white;
+  
+  z-index: 10;
+}
+
+.Persona_H1 {
+  display: flex;
+/*   position:relative; */
+  flex-direction: column;
+  background: #483D8B;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  padding: 5% 0%;
+  letter-spacing: 10px;
+  display: flex;
+  font-family: 'arsenica-variable', sans-serif;
+  font-size: 3vw;
+  color: #9574ff;
+  
+  z-index: 10;
+}
+
+
+
+
+
+.Final_H1 {
+  background: #080e20;
+  width: 100vw;
+  justify-content: center;
+  padding: 1%;
+  display: flex;
+  font-family: Lydian, sans-serif;
+  color: #9574ff;
+  font-size: 40px;
+}
+
+/* media query stuff for mobile & desktop */
+@media screen and (max-width: 2560px) {
+  .hint {
+    font-size: 1vw;
+  }
+  .smokey_image2 img{
+    width: 50vw;
+  }
+  .Tpic {
+    width: 1310px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic2 {
+    width: 770px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic3 {
+    width: 1470px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic4 {
+    width: 1240px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic5 {
+    width: 1240px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic6 {
+    width: 1647px;
+    aspect-ratio: 2.14 / 2;
+    justify-content:flex-start;
+  }
+  .TpicAG {
+    width: 1827px;
+    aspect-ratio: 2.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic7 {
+    width: 1372px;
+    aspect-ratio: 2.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic9 {
+    width: 1479px;
+    aspect-ratio: 2.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic10 {
+    width: 1542px;
+    aspect-ratio: 2.14 / 2;
+    justify-content:flex-start;
+  }
+  .TpicS {
+    width: 804px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .smokeyH1 {
+    font-size: 3vw;
+  }
+  
+/* smokey rabbits   */
+  .r1S{
+    top: -188px;
+    width: 200px;
+  }
+  .r7S{
+    top: -25px;
+    right: -550px;
+    width: 200px;
+/*     left: 198px; */
+  }
+  .r6S{
+    bottom: -1906px;
+    right: -498px;
+    width: 200px;
+  }
+  
+/*  Olympic Smokey rabbits  */
+  .r2_SO{
+    top: 585px;
+    left: 1165px;
+    width: 200px;
+  }
+  .r4_SO {
+    top: 585px;
+    left: 1165px;
+    width: 200px;
+  }
+  .r5_SO {
+    top: 2270px;
+    left: 595px;
+    width: 200px;
+  }
+  .r3_SO {
+    top: 2270px;
+    left: 595px;
+    width: 200px;
+  }
+  .r8_SO {
+    top: 665px;
+    left: 510px;
+    width: 200px;
+  }
+  
+  /*  LA Olympics page  */
+  .rP1 {
+    top: 2840px;
+    left: 1380px;
+    width: 200px;
+/*     opacity: 20%; */
+  }
+  .r13P {
+    top: 7280px;
+    left: 1500px;
+    width: 200px;
+/*     opacity: 20%; */
+  }
+  .r2_LA {
+    top: -195px;
+    left: 940px;
+    width: 200px;
+  }
+  .r8_LA {
+    top: -195px;
+    left: 940px;
+    width: 200px;
+  }
+  .r6_LA {
+    top: 2680px;
+    left: 210px;
+    width: 200px;
+  }
+  .r5_LA {
+    top: 2680px;
+    left: 210px;
+    width: 200px;
+  }
+  .r3_LA {
+    top: -914px;
+    left: -10px;
+    width: 200px;
+  }
+  
+/* Roman Rabbits */
+  .r6R {
+    top: 828px;
+    left: 550px;
+    width: 200px;
+  }
+  .r8iR {
+    top: 828px;
+    left: 550px;
+    width: 200px;
+  }
+  .r4R {
+    top: 3575px;
+    left: 10px;
+    width: 200px;
+  }
+  
+/*  Arcadian stuff  */
+  .r5_Arc {
+    top: 2272px;
+    left: 620px;
+    width: 200px;
+  }
+  .r8_Arc {
+    top: 2272px;
+    left: 620px;
+    width: 200px;
+  }
+  .r2_Arc {
+    top: -590px;
+    left: 1880px;
+    width: 200px;
+  }
+/*  Hermes stuff  */
+  .HM {
+    width: 100px;
+  }
+  .r6_Harp {
+    top: 1628px;
+    left: 1630px;
+    width: 200px;
+  }
+  .r8i_Harp {
+    top: 1628px;
+    left: 1630px;
+    width: 200px;
+  }
+  .r4_Harp {
+    top: 3716px;
+    left: 510px;
+    width: 200px;
+  }
+/*  tricks  */
+  .r7_Harp {
+    top: 1852px;
+    left: 890px;
+    width: 200px;
+  }
+  .r5_Harp {
+    top: 1852px;
+    left: 890px;
+    width: 200px;
+  }
+/*  Archaic greece stuff  */
+  .r7_ArcG {
+    top: -88px;
+    left: 1090px;
+    width: 200px;
+  }
+  .r5_ArcG {
+    top: -88px;
+    left: 1090px;
+    width: 200px;
+  }
+  .r6_ArcG {
+    top: 4482px;
+    left: 890px;
+    width: 200px;
+  }
+/*  Homeric Rabbits  */
+  .r3_Hom {
+    top: 2004px;
+    left: 1730px;
+    width: 200px;
+  }
+  .r8_Hom {
+    top: 2004px;
+    left: 1730px;
+    width: 200px;
+  }
+  .r2_Hom {
+    top: -3156px;
+    left: 1760px;
+    width: 200px;
+  }
+/*  Odyssey Rabbits  */
+  .r2_Ody{
+    top: 1432px;
+    left: 1990px;
+    width: 200px;
+  }
+  .r8i_Ody{
+    top: 1432px;
+    left: 1990px;
+    width: 200px;
+  }
+  .r5_Ody{
+    top: 2556px;
+    left: 540px;
+    width: 200px;
+  }
+/*  EPIC hoppers  */
+  .r9E{
+    top: -194px;
+    left: 1970px;
+    width: 200px;
+  }
+  .rBE{
+    top: 2936px;
+    left: 1410px;
+    width: 200px;
+  }
+  .rHE{
+    top: 2936px;
+    left: 840px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .smokeyH1 {
+    font-size: 3vw;
+  }
+  .r1S{
+    top: -100px;
+    width: 100px;
+  }
+  .r7S{
+    top: 23px;
+    right: -353px;
+    width: 100px;
+/*     left: 198px; */
+  }
+  .r6S{
+    bottom: -2190px;
+    right: -498px;
+    width: 100px;
+  }
+  
+  .r2_SO{
+    top: 695px;
+    left: 778px;
+    width: 150px;
+  }
+  .r4_SO {
+    top: 695px;
+    left: 778px;
+    width: 150px;
+  }
+  .r5_SO {
+    top: 2238px;
+    left: 285px;
+    width: 150px;
+  }
+  .r3_SO {
+    top: 2238px;
+    left: 285px;
+    width: 150px;
+  }
+  .r8_SO {
+    top: 614px;
+    left: 220px;
+    width: 150px;
+  }
+  
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .Tpic {
+    width: 100vw;
+    aspect-ratio: 3/1;
+  }
+  .smokeyH1 {
+    font-size: 5vw;
+  }
+  .iDk_L{
+    gap: 80px;
+  }
+  .iDk_R{
+    gap: 55px;
+  }
+
+  .r1S{
+    top: -100px;
+    width: 100px;
+  }
+  .r7S{
+    top: 23px;
+    right: -280px;
+    width: 100px;
+/*     left: 198px; */
+  }
+  .r6S{
+    bottom: -1752px;
+    right: -498px;
+    width: 100px;
+  }
+  .r2_SO{
+    top: 305px;
+    left: 630px;
+    width: 100px;
+  }
+  .r4_SO {
+    top: 305px;
+    left: 630px;
+    width: 100px;
+  }
+  .r5_SO {
+    top: 1842px;
+    left: 215px;
+    width: 100px;
+  }
+  .r3_SO {
+    top: 1842px;
+    left: 215px;
+    width: 100px;
+  }
+  .r8_SO {
+    top: 565px;
+    width: 100px;
+  }
+  
+  
+  
+}
+@media screen and (max-width: 650px) {
+  .splashH1 {
+    padding: 1%;
+    font-size: 43px;
+  }
+  .smokeyH1 {
+    font-size: 20px;
+  }
+  .Tpic {
+    width: 650px;
+    aspect-ratio: 6.14/2;
+  }
+  .Tpic2 {
+    width: 530px;
+    aspect-ratio: 7.14 / 2;
+  }
+  .Tpic3 {
+    width: 730px;
+    aspect-ratio: 6.14/2;
+  }
+  .Tpic4 {
+    width: 613px;
+    aspect-ratio: 6.14/2;
+  }
+  .Tpic6 {
+    width: 614px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .TpicAG {
+    width: 681px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic7 {
+    width: 511px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic9 {
+    width: 551px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic10 {
+    width: 575px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .TpicS {
+    width: 399px;
+    aspect-ratio: 6.14/2;
+  }
+  .r6S {
+    bottom: -1385px;
+    right: -175px;  
+    width: 75px;
+  }
+  .r7S{
+    top: 15px;
+    right: -80px;
+    width: 75px;
+/*     right: 68px; */
+  }
+  .r2_SO{
+    top: 325px;
+    left: 365px;
+    width: 75px;
+  }
+  .r4_SO {
+    top: 325px;
+    left: 365px;
+    width: 75px;
+  }
+  .r5_SO {
+    top: 1468px;
+    left: 120px;
+    width: 75px;
+  }
+  .r3_SO {
+    top: 1468px;
+    left: 120px;
+    width: 75px;
+  }
+  .r8_SO {
+    top: 510px;
+    left: 0px;
+    width: 75px;
+  }
+  
+/*  LA Olympics page  */
+  .rP1 {
+    top: 1410px;
+    left: 370px;
+    width: 75px;
+/*     opacity: 20%; */
+  }
+  .r13P {
+    top: 3640px;
+    left: 370px;
+    width: 75px;
+/*     opacity: 20%; */
+  }
+  .r2_LA {
+    top: -75px;
+    left: 540px;
+    width: 75px;
+  }
+  .r8_LA {
+    top: -75px;
+    left: 460px;
+    width: 75px;
+  }
+  .r6_LA {
+    top: 1790px;
+    left: 20px;
+    width: 75px;
+  }
+  .r5_LA {
+    top: 1790px;
+    left: 20px;
+    width: 75px;
+  }
+  .r3_LA {
+    top: -394px;
+    left: -10px;
+    width: 75px;
+  }
+/* Roman Rabbits */
+  .r6R {
+    top: 828px;
+    left: 550px;
+    width: 75px;
+  }
+  .r8iR {
+    top: 828px;
+    left: 550px;
+    width: 75px;
+  }
+  .r4R {
+    top: 1635px;
+    left: 10px;
+    width: 75px;
+  }
+/*  Arcadian Rabbits  */
+  .r5_Arc {
+    top: 852px;
+    left: 140px;
+    width: 75px;
+  }
+  .r8_Arc {
+    top: 852px;
+    left: 140px;
+    width: 75px;
+  }
+  .r2_Arc {
+    top: -190px;
+    left: 470px;
+    width: 75px;
+  }
+/*  Hermes stuff  */
+  .HM {
+    width: 50px;
+  }
+  .r6_Harp {
+    top: 264px;
+    left: 560px;
+    width: 75px;
+  }
+  .r8i_Harp {
+    top: 264px;
+    left: 560px;
+    width: 75px;
+  }
+  .r4_Harp {
+    top: 1416px;
+    left: 320px;
+    width: 75px;
+  }
+/*  tricks  */
+  .r7_Harp {
+    top: 612px;
+    left: 300px;
+    width: 75px;
+  }
+  .r5_Harp {
+    top: 612px;
+    left: 310px;
+    width: 75px;
+  }
+  
+/*  Archaic greece stuff  */
+  .r7_ArcG {
+    top: 32px;
+    left: 290px;
+    width: 75px;
+  }
+  .r5_ArcG {
+    top: 32px;
+    left: 290px;
+    width: 75px;
+  }
+  .r6_ArcG {
+    top: 1704px;
+    left: 370px;
+    width: 75px;
+  }
+/*  Homeric Rabbits  */
+  .r3_Hom {
+    top: 815px;
+    left: 320px;
+    width: 75px;
+  }
+  .r8_Hom {
+    top: 815px;
+    left: 320px;
+    width: 75px;
+  }
+  .r2_Hom {
+    top: -838px;
+    left: 430px;
+    width: 75px;
+  }
+/*  Odyssey rabbits  */
+  .r2_Ody{
+    top: 832px;
+    left: 400px;
+    width: 75px;
+  }
+  .r8i_Ody{
+    top: 832px;
+    left: 400px;
+    width: 75px;
+  }
+  .r5_Ody{
+    top: 1198px;
+    left: 450px;
+    width: 75px;
+  }
+  /*  EPIC hoppers  */
+  .r9E{
+    top: -68px;
+    left: 540px;
+    width: 75px;
+  }
+  .rBE{
+    top: 1350px;
+    left: 310px;
+    width: 75px;
+  }
+  .rHE{
+    top: 1350px;
+    left: 160px;
+    width: 75px;
+  }
+  
+}
+
+@media screen and (max-width: 430px) {
+  .r2_SO{
+    top: 325px;
+    left: 145px;
+    width: 75px;
+  }
+  .r4_SO{
+    top: 325px;
+    left: 145px;
+    width: 75px;
+  }
+  .r5_SO {
+    top: 1228px;
+    left: 90px;
+    width: 75px;
+  }
+  .r3_SO {
+    top: 1168px;
+    left: 90px;
+    width: 75px;
+  }
+  .r8_SO {
+    top: 430px;
+    left: 0px;
+    width: 75px;
+  }
+  
+}
+
+@media screen and (max-width: 320px) {
+  .hint {
+    font-size: 2vw;
+  }
+  
+  #spacing {
+    height: 50px;
+  }
+  .iDk {
+/*     width: 50vw; */
+  }
+  .Tpic {
+    width: 320px;
+    aspect-ratio: 6.14/2;
+  }
+  .Tpic2 {
+    width: 220px;
+    aspect-ratio: 7.14 / 2;
+  }
+  .Tpic3 {
+    width: 360px;
+    aspect-ratio: 6.14/2;
+  }
+  .Tpic4{
+    width: 302px;
+    aspect-ratio: 6.14 / 2;
+  }
+  .Tpic5 {
+    width: 1240px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic6 {
+    width: 302px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .TpicAG {
+    width: 335px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic7 {
+    width: 272px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic9 {
+    width: 271px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .Tpic10 {
+    width: 283px;
+    aspect-ratio: 3.14 / 2;
+    justify-content:flex-start;
+  }
+  .TpicS {
+    width: 324px;
+    aspect-ratio: 10.14 / 2;
+  }
+  .splashH1 {
+    font-size: 5vw;
+  }
+  .smokeyH1 {
+    font-size: 3vw;
+  }
+  .f1 {
+    font-size: 5vw;
+  }
+  
+  .r6S {
+    bottom: -1035px;
+    right: -175px;  
+    width: 75px;
+  }
+  .r7S{
+    top: 15px;
+    right: -80px;
+    width: 75px;
+/*     right: 68px; */
+  }
+  .r1S{
+    top: 15px;
+    right: -80px;
+    width: 75px;
+/*     right: 68px; */
+  }
+  
+  .r2_SO {
+    left: 155px;
+    width: 75px;
+  }
+  .r4_SO {
+    left: 155px;
+    width: 75px;
+  }
+  .r5_SO {
+    top: 1105px;
+    width: 75px;
+  }
+  .r3_SO {
+    top: 1105px;
+    width: 75px;
+  }
+  
+  /*  LA Olympics page  */
+  .rP1 {
+    top: 1084px;
+    left: 130px;
+    width: 75px;
+/*     opacity: 20%; */
+  }
+  .r13P {
+    top: 2984px;
+    left: 130px;
+    width: 75px;
+/*     opacity: 20%; */
+  }
+  .r2_LA {
+    top: -75px;
+    left: 250px;
+    width: 75px;
+  }
+  .r8_LA {
+    top: -75px;
+    left: 160px;
+    width: 75px;
+  }
+  .r6_LA {
+    top: 1296px;
+    left: 30px;
+    width: 75px;
+  }
+  .r5_LA {
+    top: 1296px;
+    left: 30px;
+    width: 75px;
+  }
+  .r3_LA {
+    top: -294px;
+    left: -10px;
+    width: 75px;
+  }
+  
+/* Roman Rabbits */
+  .r6R {
+    top: 782px;
+    left: 260px;
+    width: 75px;
+  }
+  .r8iR {
+    top: 782px;
+    left: 260px;
+    width: 75px;
+  }
+  .r4R {
+    top: 1265px;
+    left: -16px;
+    width: 75px;
+  }
+/* Arcadian Rabbits */ 
+/* 5, 8, 2   */
+  .r5_Arc {
+    top: 642px;
+    left: 140px;
+    width: 75px;
+  }
+  .r8_Arc {
+    top: 642px;
+    left: 140px;
+    width: 75px;
+  }
+  .r2_Arc {
+    top: -140px;
+    left: 220px;
+    width: 75px;
+  }
+/*  Hermes stuff  */
+  .HM {
+    width: 50px;
+  }
+  .r6_Harp {
+    top: 384px;
+    left: 210px;
+    width: 75px;
+  }
+  .r8i_Harp {
+    top: 384px;
+    left: 210px;
+    width: 75px;
+  }
+  .r4_Harp {
+    top: 1054px;
+    left: 110px;
+    width: 75px;
+  }
+  .r7_Harp {
+    top: 737px;
+    left: 70px;
+    width: 75px;
+  }
+  .r5_Harp {
+    top: 737px;
+    left: 70px;
+    width: 75px;
+  }
+  
+  /*  Archaic greece stuff  */
+  .r7_ArcG {
+    top: 30px;
+    left: 120px;
+    width: 75px;
+  }
+  .r5_ArcG {
+    top: 30px;
+    left: 120px;
+    width: 75px;
+  }
+  .r6_ArcG {
+    top: 1224px;
+    left: 200px;
+    width: 75px;
+  }
+/*  Homeric Rabbits  */
+  .r3_Hom {
+    top: 598px;
+    left: 150px;
+    width: 75px;
+  }
+  .r8_Hom {
+    top: 598px;
+    left: 150px;
+    width: 75px;
+  }
+  .r2_Hom {
+    top: -392px;
+    left: 180px;
+    width: 75px;
+  }
+  .r2_Ody{
+    top: 486px;
+    left: 160px;
+    width: 75px;
+  }
+  .r8i_Ody{
+    top: 486px;
+    left: 160px;
+    width: 75px;
+  }
+  .r5_Ody{
+    top: 982px;
+    left: 210px;
+    width: 75px;
+  }
+  /*  EPIC hoppers  */
+  .r9E{
+    top: 46px;
+    left: 240px;
+    width: 75px;
+  }
+  .rBE{
+    top: 1060px;
+    left: 80px;
+    width: 75px;
+  }
+  .rHE{
+    top: 1060px;
+    left: 50px;
+    width: 75px;
+  }
+  
+  
+  
+}
